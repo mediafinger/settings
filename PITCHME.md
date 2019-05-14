@@ -169,13 +169,16 @@ if Settings.is?(:print_stacktrace, true)
 ```
 
 ---
-@transition[none-in fade-out]
-
 ## ~~Convoluted custom configuration chaos~~
 
 ---
-@transition[fade-in none-out]
+@transition[fade]
+## ~~Convoluted custom configuration chaos~~
+---
+@transition[fade]
+## Consistent concise custom configuration
 
+---
 ## Consistent concise custom configuration
 
 ---
