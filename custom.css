@@ -23,11 +23,12 @@
 }
 
 .reveal ul {
-  margin-top: 1em;
+  margin-top: 0.6em;
 }
 
 .reveal li {
   font-size: 80%;
+  line-height: 1.2em;
   margin-left: 30px;
   padding-bottom: 8px;
 }
