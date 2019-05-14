@@ -136,7 +136,6 @@ end
 Settings.set :access_locked, true
 ```
 
-
 ---
 ## Avoid comparison bugs
 
@@ -168,6 +167,9 @@ end
 if Settings.is?(:print_stacktrace, true)
   # ...
 ```
+
+---
+## ~~Convoluted custom configuration chaos~~
 
 ---
 ## Consistent concise custom configuration
