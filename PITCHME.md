@@ -172,7 +172,7 @@ if Settings.is?(:print_stacktrace, true)
 ## ~~Convoluted custom configuration chaos~~
 
 ---
-@transition[fade]
+@transition[fade-in fade-out]
 
 ## Consistent concise custom configuration
 
