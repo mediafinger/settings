@@ -188,12 +188,14 @@ if Settings.is?(:print_stacktrace, true)
 ---
 ## Thank you
 
-Find this presentation
+<p>&nbsp;<p/>
 
-a README with similar content
+Find this presentation
 
 and several `code` examples
 
 under: **https://github.com/mediafinger/settings**
+
+<p>&nbsp;<p/>
 
 ### Andreas Finger &nbsp;&nbsp;&nbsp; @mediafinger
