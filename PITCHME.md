@@ -12,33 +12,33 @@ And without using `method-missing`
 ---
 ### What's the value when and why?
 
-- does it use the dot-env file ENV variable?
-- does it use the Docker ENV variable?
-- does it use the server set ENV variable?
-- what is the load order of initializers?
+* does it use the dot-env file ENV variable?
+* does it use the Docker ENV variable?
+* does it use the server set ENV variable?
+* what is the load order of initializers?
 
 ---
 ## Don't use ENV in your apps directly
 
-- rely on configuration values set in your code
-- don't fail silently on typos
-- use default values
-- use objects, not only strings
+* rely on configuration values set in your code
+* don't fail silently on typos
+* use default values
+* use objects, not only strings
 
 ---
 ## No external dependency
 
-- setting values is simple
-- no need to add another gem to your codebase
-- use the same mechanism regardless of the environment
+* setting values is simple
+* no need to add another gem to your codebase
+* use the same mechanism regardless of the environment
 
 ---
 ## Everything in one file
 
-- keep the overview
-- understand the mechanism
-- add custom methods easily
-- load it before anything else
+* keep the overview
+* understand the mechanism
+* add custom methods easily
+* load it before anything else
 
 ---
 ### Implementation
@@ -177,10 +177,10 @@ if Settings.is?(:print_stacktrace, true)
 ---
 ## Consistent concise custom configuration
 
-- all custom configuration values are declared in one file
-- the code is easily grep-able for their usage
-- load order is clear
-- use the same mechanism regardless of the framework
+* all custom configuration values are declared in one file
+* the code is easily grep-able for their usage
+* load order is clear
+* use the same mechanism regardless of the framework
 
 ---
 ## Code examples
@@ -188,14 +188,12 @@ if Settings.is?(:print_stacktrace, true)
 ---
 ## Thank you
 
-You can find:
+Find this presentation
 
-* this presentation
-* a README with similar content
-* and several code snippets
+a README with similar content
 
-in this GitHub repo:  
+and several `code` examples
 
-&gt;&gt;&gt; **https://github.com/mediafinger/settings** &lt;&lt;&lt;
+under: **https://github.com/mediafinger/settings**
 
 ### Andreas Finger &nbsp;&nbsp;&nbsp; @mediafinger
