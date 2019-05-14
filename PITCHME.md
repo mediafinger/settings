@@ -52,9 +52,12 @@ There is not much code to show, so I will show it.
 # class Settings
 #
 def self.register(var_name)
-  define_singleton_method(var_name) { instance_variable_get("@#{var_name}") }
+  define_singleton_method(var_name) {
+    instance_variable_get("@#{var_name}")
+  }
 
-  instance_variable_set("@#{var_name}", ENV.fetch(var_name.to_s.upcase)
+  instance_variable_set("@#{var_name}",
+    ENV.fetch(var_name.to_s.upcase)
 end
 ```
 
@@ -65,9 +68,12 @@ end
 # class Settings
 #
 def self.register(var_name, default: nil)
-  define_singleton_method(var_name) { instance_variable_get("@#{var_name}") }
+  define_singleton_method(var_name) {
+    instance_variable_get("@#{var_name}")
+  }
 
-  instance_variable_set("@#{var_name}", ENV.fetch(var_name.to_s.upcase, default))
+  instance_variable_set("@#{var_name}",
+    ENV.fetch(var_name.to_s.upcase, default))
 end
 ```
 
@@ -93,7 +99,10 @@ Settings.api.url
 # class Settings
 #
 def self.register(var_name, default: nil)
-  define_singleton_method(var_name) { instance_variable_get("@#{var_name}") }
+  define_singleton_method(var_name) {
+    instance_variable_get("@#{var_name}")
+  }
+
   set(var_name, ENV.fetch(var_name.to_s.upcase, default))
 end
 
@@ -115,23 +124,22 @@ Settings.set :access_locked, true
 +++
 ## Avoid comparison bugs
 
-+++
-#### Classic mistake
-
 ```ruby
 if ENV["PRINT_STACKTRACE"]
   # ...
 ```
 
+Do you spot the classic error?
+
 +++
-#### What if...?
+### What if...?
 
 ```shell
 export PRINT_STACKTRACE=false
 ```
 
 +++
-#### Type agnostic comparison method
+### Type agnostic comparison method
 
 ```ruby
 def self.is?(var_name, other_value)
