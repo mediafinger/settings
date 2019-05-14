@@ -49,7 +49,7 @@ class Settings
   # Don't add secrets as 'default' values here!
   #
   # Either set ENV vars for secrets
-  #   or add them to this file, which is in .gitignore:
+  #   or add them to this file, which should be in .gitignore:
   #
   load "config/settings.local.rb" if File.exist?("config/settings.local.rb")
   #

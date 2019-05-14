@@ -4,7 +4,7 @@ class Example
   def some_method
     # ...
 
-    database_username = Settings.db_username
+    send_mail(from: Settings.mail_from, body: body)
 
     # ...
   end
