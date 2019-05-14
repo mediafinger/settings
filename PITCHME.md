@@ -140,12 +140,13 @@ Settings.set :access_locked, true
 +++
 ## Avoid comparison bugs
 
++++
+### Do you spot the classic error?
+
 ```ruby
 if ENV["PRINT_STACKTRACE"]
   # ...
 ```
-
-Do you spot the classic error?
 
 +++
 ### What if...?
