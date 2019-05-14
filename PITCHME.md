@@ -176,4 +176,4 @@ in this GitHub repo:
 
 https://github.com/mediafinger/settings
 
-### Andreas Finger (@mediafinger)
+### Andreas Finger :: @mediafinger
