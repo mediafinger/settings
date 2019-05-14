@@ -93,6 +93,22 @@ Settings.api.url
 ```
 
 +++
+#### Settings.register with default value
+
+```ruby
+# class Settings
+#
+def self.register(var_name, default: nil)
+  define_singleton_method(var_name) {
+    instance_variable_get("@#{var_name}")
+  }
+
+  instance_variable_set("@#{var_name}",
+    ENV.fetch(var_name.to_s.upcase, default))
+end
+```
+
++++
 #### Settings.set extracted
 
 ```ruby
@@ -174,6 +190,6 @@ You can find:
 
 in this GitHub repo:  
 
-https://github.com/mediafinger/settings
+---> **https://github.com/mediafinger/settings** <---
 
 ### Andreas Finger &nbsp;&nbsp;&nbsp; @mediafinger
