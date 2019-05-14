@@ -1,0 +1,14 @@
+#
+# GitPitch Slideshow Custom Settings
+#
+# For details, visit Wiki:
+# https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
+#
+footnote : "Andreas Finger :: May 2019 :: Barcelona :: @mediafinger on Github and Twitter"
+highlight : solarized-light
+logo : "assets/rabbitmq-logo-png-transparent.png"
+published : false
+theme : beige
+theme-override : custom.css
+transition : none
+vertical-center : false
