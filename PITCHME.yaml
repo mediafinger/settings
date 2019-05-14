@@ -8,7 +8,7 @@ footnote : "Andreas Finger :: May 2019 :: Barcelona :: @mediafinger on Github an
 highlight : solarized-light
 logo : "assets/ruby_400x400.png"
 published : false
-theme : beige
+theme : sky
 theme-override : custom.css
 transition : none
-vertical-center : false
+vertical-center : true
