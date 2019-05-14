@@ -29,7 +29,7 @@ And without using `method-missing`
 ## No external dependency
 
 - setting values is simple
-  - no need to add another gem to your codebase
+- no need to add another gem to your codebase
 - use the same mechanism regardless of the environment
 
 +++
@@ -159,3 +159,21 @@ if Settings.is?(:print_stacktrace, true)
 - the code is easily grep-able for their usage
 - load order is clear
 - use the same mechanism regardless of the framework
+
++++
+## Code examples
+
++++
+## Thank you
+
+You can find:
+
+* this presentation
+* a README with similar content
+* and several code snippets
+
+in this GitHub repo:  
+
+https://github.com/mediafinger/settings
+
+### Andreas Finger (@mediafinger)
