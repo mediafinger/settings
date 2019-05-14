@@ -171,6 +171,9 @@ if Settings.is?(:print_stacktrace, true)
 +++
 ## Consistent concise custom configuration
 
++++
+## Consistent concise custom configuration
+
 - all custom configuration values are declared in one file
 - the code is easily grep-able for their usage
 - load order is clear
