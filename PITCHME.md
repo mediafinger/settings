@@ -6,8 +6,10 @@ In any Ruby app (not only Rails)
 
 And without using `method-missing`
 
++++
 ## Convoluted custom configuration chaos
 
++++
 ### What's the value when and why?
 
 - does it use the dot-env file ENV variable?
@@ -15,6 +17,7 @@ And without using `method-missing`
 - does it use the server set ENV variable?
 - what is the load order of initializers?
 
++++
 ## Don't use ENV in your apps directly
 
 - rely on configuration values set in your code
@@ -22,12 +25,14 @@ And without using `method-missing`
 - use default values
 - use objects, not only strings
 
++++
 ## No external dependency
 
 - setting values is simple
   - no need to add another gem to your codebase
 - use the same mechanism regardless of the environment
 
++++
 ## Everything in one file
 
 - keep the overview
@@ -35,10 +40,12 @@ And without using `method-missing`
 - add custom methods easily
 - load it before anything else
 
++++
 ### Implementation
 
 There is not much code to show, so I will show it.
 
++++
 #### Settings.register
 
 ```ruby
@@ -51,6 +58,7 @@ def self.register(var_name)
 end
 ```
 
++++
 #### Settings.register with default value
 
 ```ruby
@@ -63,6 +71,7 @@ def self.register(var_name, default: nil)
 end
 ```
 
++++
 #### Settings.register usage
 
 ```ruby
@@ -77,6 +86,7 @@ register :api_url, default: "http://localhost:4567/api"
 Settings.api.url
 ```
 
++++
 #### Settings.set extracted
 
 ```ruby
@@ -92,6 +102,7 @@ def self.set(var_name, value)
 end
 ```
 
++++
 #### Settings.set usage
 
 ```ruby
@@ -101,8 +112,10 @@ Settings.set :access_locked, true
 ```
 
 
++++
 ## Avoid comparison bugs
 
++++
 #### Classic mistake
 
 ```ruby
@@ -110,12 +123,14 @@ if ENV["PRINT_STACKTRACE"]
   # ...
 ```
 
++++
 #### What if...?
 
 ```shell
 export PRINT_STACKTRACE=false
 ```
 
++++
 #### Type agnostic comparison method
 
 ```ruby
@@ -129,6 +144,7 @@ if Settings.is?(:print_stacktrace, true)
   # ...
 ```
 
++++
 ## Consistent concise custom configuration
 
 - all custom configuration values are declared in one file
