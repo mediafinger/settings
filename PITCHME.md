@@ -194,6 +194,6 @@ You can find:
 
 in this GitHub repo:  
 
----> **https://github.com/mediafinger/settings** <---
+**&gt;&gt;&gt; https://github.com/mediafinger/settings &lt;&lt;&lt;**
 
 ### Andreas Finger &nbsp;&nbsp;&nbsp; @mediafinger
