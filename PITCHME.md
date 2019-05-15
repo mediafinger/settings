@@ -202,11 +202,13 @@ under: **https://github.com/mediafinger/settings**
 
 ---
 
-If you liked this talk about **Settings**, please log with your GitHub account
+If you liked this talk about **Settings**, please log with your GitHub account into the contriboot page of the RubyUnconf and **vote** for me :)
 
-into the contriboot page of the RubyUnconf and **vote** for me :)
+<p>&nbsp;<p/>
 
 **https://contriboot.rubyunconf.eu/contributions**
+
+<p>&nbsp;<p/>
 
 ## Thank you
 
