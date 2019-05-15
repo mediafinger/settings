@@ -89,7 +89,7 @@ register :api_url, default: "http://localhost:4567/api"
 
 # Access:
 #
-Settings.api.url
+Settings.api_url
 ```
 
 ---
