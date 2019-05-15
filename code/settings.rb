@@ -34,14 +34,15 @@ class Settings
   end
 
 
-  # DB credentials
-  register :db_username, default: "kopiba"
-  register :db_password, default: "alleswirdgut"
+  # WiFi credentials
+  register :wifi_name,     default: "XING-GUEST"
+  register :wifi_password, default: "goxinggo"
+
 
   # API credentials
   register :api_base_url, default: "https://example.com/api"
   register :api_username, default: "development"
-  register :api_password, default: "secret"
+  register :api_password, default: "not_secret"
 
 
   ##################################################################################
