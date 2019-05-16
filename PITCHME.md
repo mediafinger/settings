@@ -57,7 +57,7 @@ def self.register(var_name)
   }
 
   instance_variable_set("@#{var_name}",
-    ENV.fetch(var_name.to_s.upcase)
+    ENV.fetch(var_name.to_s.upcase))
 end
 ```
 
@@ -199,13 +199,3 @@ under: **https://github.com/mediafinger/settings**
 <p>&nbsp;<p/>
 
 ### Andreas Finger &nbsp;&nbsp;&nbsp; @mediafinger
-
----
-
-If you liked this talk about **Settings**, please log with your GitHub account into the contriboot page of the RubyUnconf and **vote** for me :)
-
-**https://contriboot.rubyunconf.eu/contributions**
-
-## Thank you
-
-#### Andreas Finger &nbsp;&nbsp;&nbsp; @mediafinger
