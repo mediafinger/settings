@@ -204,13 +204,9 @@ under: **https://github.com/mediafinger/settings**
 
 If you liked this talk about **Settings**, please log with your GitHub account into the contriboot page of the RubyUnconf and **vote** for me :)
 
-<p>&nbsp;<p/>
-
 **https://contriboot.rubyunconf.eu/contributions**
 
 ![https://contriboot.rubyunconf.eu/contributions](assets/contriboot_qr_code.png "https://contriboot.rubyunconf.eu/contributions" =400x400)
-
-<p>&nbsp;<p/>
 
 ## Thank you
 
