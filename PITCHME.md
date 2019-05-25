@@ -4,7 +4,7 @@ A clean way to handle **custom configuration values**
 
 In any Ruby app (not only Rails)
 
-And without using `method-missing`
+And without using `method_missing`
 
 ---
 ## Convoluted custom configuration chaos
